@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
 </head>
+
 <body>
-    
+    <h1 id="title"> Formulario </h1>
+    <p id="description"> Este es un formulario para que nos cuentes tu experiencia</p>
+
+
+    <form id="survey-form">
+
+        <!-- Nombre -->
+        <label id="name-label" for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required />
+
+        <!-- Email -->
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su email" required />
+
+        <!-- Edad -->
+        <label id="number-label" for="number">Edad:</label>
+        <input type="number" id="number" name="number" min="18" max="100" placeholder="Ingrese su edad" />
+
+        <!-- Dropdown -->
+        <label for="dropdown">¿Qué producto usas mayormente?</label>
+        <select id="dropdown" name="product">
+            <option value="product1">Producto 1</option>
+            <option value="product2">Producto 2</option>
+            <option value="product3">Producto 3</option>
+        </select>
+
+        <!-- Radios -->
+        <p>¿Qué tan seguido usás nuestros servicios?</p>
+        <div class="radio-group">
+            <div class="radio-item">
+                <input type="radio" id="daily" name="frequency" value="daily" />
+                <label for="daily">Diariamente</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="weekly" name="frequency" value="weekly" />
+                <label for="weekly">Semanalmente</label>
+            </div>
+        </div>
+
+        <!-- Checkboxes -->
+        <p>¿Qué funciones utilizás? (Seleccioná todas las que apliquen)</p>
+        <div class="checkbox-group">
+            <div class="checkbox-item">
+                <input type="checkbox" id="feature1" name="features" value="feature1" />
+                <label for="feature1">Función 1</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="feature2" name="features" value="feature2" />
+                <label for="feature2">Función 2</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="feature3" name="features" value="feature3" />
+                <label for="feature3">Función 3</label>
+            </div>
+        </div>
+
+        <!-- Comentarios -->
+        <label for="comments">Comentarios:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Escribí tus sugerencias acá..."></textarea>
+
+        <!-- Enviar -->
+        <button type="submit" id="submit">Enviar</button>
+
+    </form>
 </body>
+
 </html>
