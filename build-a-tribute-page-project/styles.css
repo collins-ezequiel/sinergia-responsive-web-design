@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+}
+
+#main {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#img-caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+#tribute-info {
+    margin: 2rem 0;
+    text-align: justify;
+    line-height: 1.6;
+}
+#tribute-link {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
