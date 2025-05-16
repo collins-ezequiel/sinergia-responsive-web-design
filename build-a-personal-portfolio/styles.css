@@ -297,6 +297,10 @@ h2 {
             }
         }
     }
+
+    .container-gestor-posts{
+        margin-bottom: 0;
+    }
 }
 
 #skills {
